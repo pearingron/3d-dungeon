@@ -12,7 +12,7 @@ _global_script_classes=[ {
 "base": "Spatial",
 "class": "Cell",
 "language": "GDScript",
-"path": "res://Cell.gd"
+"path": "res://Assets/Mechanics/Cell.gd"
 } ]
 _global_script_class_icons={
 "Cell": ""
@@ -21,13 +21,13 @@ _global_script_class_icons={
 [application]
 
 config/name="3D Dungeon RPG"
-run/main_scene="res://World.tscn"
+run/main_scene="res://Assets/Debug/World.tscn"
 config/icon="res://icon.png"
 
 [autoload]
 
-ResourceStash="*res://ResourceStash.gd"
-Globals="*res://Globals.gd"
+ResourceStash="*res://Assets/Debug/ResourceStash.gd"
+Globals="*res://Assets/Mechanics/Globals.gd"
 
 [display]
 
@@ -83,4 +83,5 @@ common/enable_pause_aware_picking=true
 
 [rendering]
 
+quality/driver/driver_name="GLES2"
 environment/default_environment="res://default_env.tres"
